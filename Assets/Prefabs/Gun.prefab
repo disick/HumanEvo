@@ -248,8 +248,8 @@ GameObject:
   - component: {fileID: 5317371986234649741}
   - component: {fileID: 5317371986244440717}
   - component: {fileID: 5317371987229203355}
-  - component: {fileID: 5317371987229203354}
-  - component: {fileID: 5317371987229203358}
+  - component: {fileID: 3803297667261416418}
+  - component: {fileID: 4062517213604969637}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -306,7 +306,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1659658, y: 0.10491383, z: 0.06708479}
   m_Center: {x: 0.0067521334, y: 0.014673874, z: -0.009268999}
---- !u!114 &5317371987229203354
+--- !u!114 &3803297667261416418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -315,22 +315,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5317371986235013357}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b005d4410853edb48a34bfcf9ca9d6d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a8590f128edba249a63a1ecfe0d7897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootPoint: {fileID: 0}
+  damageEnemy: 10
+  currentAmmo: 0
+  rateOfFire: 0
+  weaponRange: 0
+--- !u!114 &4062517213604969637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5317371986235013357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d956c9d51c28549a72f18bb9ce9278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hand: {fileID: 0}
---- !u!114 &5317371987229203358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5317371986235013357}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be039b29e8bb2c440be9dd9d5b23cf9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  range: 100
-  fpsCam: {fileID: 0}

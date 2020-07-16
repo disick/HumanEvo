@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Pistol : MonoBehaviour
 {
+   // public GameObject imppactEffect;
+   // public ParticleSystem muzzleFlash;
+
     RaycastHit hit;
     [SerializeField]
     Transform ShootPoint;
@@ -15,7 +16,7 @@ public class Pistol : MonoBehaviour
     [SerializeField]
     int currentAmmo;
 
-    //Rate Od Fire
+    //Rate Of Fire
     [SerializeField]
     float rateOfFire;
     float nextFire = 0;
@@ -32,6 +33,7 @@ public class Pistol : MonoBehaviour
     }
     void Shoot()
     {
+       // muzzleFlash.Play();
         if (Time.time > nextFire)
         {
             //FireRate
@@ -49,6 +51,9 @@ public class Pistol : MonoBehaviour
                 }
                 else
                     Debug.Log(hit.transform.name);
+                // Instatieate impact effect from the gun
+              // GameObject impactGO = Instantiate(imppactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+              //  Destroy(impactGO, 2f);
             }
 
         }
